@@ -20,10 +20,14 @@
                 <Editor x:Name="resultOne" IsReadOnly="True"></Editor>
             </StackLayout>
 
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="Black"></BoxView>
+            
             <StackLayout>
                 <Label x:Name="ErrorBox" TextColor="Red"></Label>
             </StackLayout>
-            
+
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="Black"></BoxView>
+
             <StackLayout Orientation="Vertical">
                 <Editor x:Name="resultTwo" IsReadOnly="True"></Editor>
                 <StackLayout Orientation="Horizontal">
