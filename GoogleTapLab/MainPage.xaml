@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoogleTapLab.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Google Tap" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+
+            <StackLayout Orientation="Vertical">
+                <Label x:Name="MorseBufferOne" FontSize="20" Text="Buffer: "></Label>
+                <StackLayout Orientation="Horizontal">
+                    <Button Clicked="dotOneClick" FontSize="30" x:Name="dotOne" Text="." BackgroundColor="LightGreen" HorizontalOptions="FillAndExpand"></Button>
+                    <Button Clicked="dashOneClick" FontSize="30" x:Name="dashOne" Text="-" BackgroundColor="LightBlue" HorizontalOptions="FillAndExpand"></Button>
+                </StackLayout>
+                <Button Clicked="spaceOneClick" Text="_" BackgroundColor="LightSalmon"></Button>
+                <Editor x:Name="resultOne" IsReadOnly="True"></Editor>
+            </StackLayout>
+
+            <StackLayout>
+                <Label x:Name="ErrorBox" TextColor="Red"></Label>
+            </StackLayout>
+            
+            <StackLayout Orientation="Vertical">
+                <Editor x:Name="resultTwo" IsReadOnly="True"></Editor>
+                <StackLayout Orientation="Horizontal">
+                    <Button Clicked="dotTwoClick" FontSize="30" x:Name="dotTwo" Text="." BackgroundColor="LightGreen" HorizontalOptions="FillAndExpand"></Button>
+                    <Button Clicked="dashTwoClick" FontSize="30" x:Name="dashTwo" Text="-" BackgroundColor="LightBlue" HorizontalOptions="FillAndExpand"></Button>
+                </StackLayout>
+                <Button Clicked="spaceTwoClick" Text="_" BackgroundColor="LightSalmon"></Button>
+                <Label x:Name="MorseBufferTwo" FontSize="20" Text="Buffer: "></Label>
+            </StackLayout>
+
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
