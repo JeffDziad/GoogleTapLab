@@ -98,7 +98,7 @@ namespace GoogleTapLab
 
         private void updateBufferLabel(Label label, string buffer)
         {
-            label.Text = "Buffer: " + buffer;
+            label.Text = buffer;
         }
 
     }

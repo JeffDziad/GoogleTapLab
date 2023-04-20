@@ -11,14 +11,14 @@
         <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
 
             <StackLayout Orientation="Vertical">
-                <Label HorizontalOptions="CenterAndExpand" Text="Morse to Text 1" FontSize="25"></Label>
-                <Label x:Name="MorseBufferOne" FontSize="20" Text="Buffer: "></Label>
+                <Label FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand" Text="Morse to Text 1" FontSize="30"></Label>
+                <Label HorizontalOptions="CenterAndExpand" x:Name="MorseBufferOne" FontSize="25" Text=""></Label>
                 <StackLayout Orientation="Horizontal">
                     <Button Clicked="dotOneClick" FontSize="30" x:Name="dotOne" Text="." BackgroundColor="LightGreen" HorizontalOptions="FillAndExpand"></Button>
                     <Button Clicked="dashOneClick" FontSize="30" x:Name="dashOne" Text="-" BackgroundColor="LightBlue" HorizontalOptions="FillAndExpand"></Button>
                 </StackLayout>
                 <Button Clicked="spaceOneClick" Text="_" BackgroundColor="LightSalmon"></Button>
-                <Editor x:Name="resultOne" IsReadOnly="True"></Editor>
+                <Editor BackgroundColor="LightGoldenrodYellow" x:Name="resultOne" IsReadOnly="True"></Editor>
             </StackLayout>
             
             <StackLayout>
@@ -27,14 +27,15 @@
 
 
             <StackLayout Orientation="Vertical">
-                <Label HorizontalOptions="CenterAndExpand" Text="Morse to Text 2" FontSize="25"></Label>
-                <Editor x:Name="resultTwo" IsReadOnly="True"></Editor>
+                <Label FontAttributes="Bold" TextColor="Black" HorizontalOptions="CenterAndExpand" Text="Morse to Text 2" FontSize="30"></Label>
+                <Label HorizontalOptions="CenterAndExpand" x:Name="MorseBufferTwo" FontSize="25" Text=""></Label>
                 <StackLayout Orientation="Horizontal">
                     <Button Clicked="dotTwoClick" FontSize="30" x:Name="dotTwo" Text="." BackgroundColor="LightGreen" HorizontalOptions="FillAndExpand"></Button>
                     <Button Clicked="dashTwoClick" FontSize="30" x:Name="dashTwo" Text="-" BackgroundColor="LightBlue" HorizontalOptions="FillAndExpand"></Button>
                 </StackLayout>
                 <Button Clicked="spaceTwoClick" Text="_" BackgroundColor="LightSalmon"></Button>
-                <Label x:Name="MorseBufferTwo" FontSize="20" Text="Buffer: "></Label>
+                <Editor BackgroundColor="LightGoldenrodYellow" x:Name="resultTwo" IsReadOnly="True"></Editor>
+                
             </StackLayout>
 
         </StackLayout>
