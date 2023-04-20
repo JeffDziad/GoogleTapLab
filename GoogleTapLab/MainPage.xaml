@@ -11,6 +11,7 @@
         <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
 
             <StackLayout Orientation="Vertical">
+                <Label HorizontalOptions="CenterAndExpand" Text="Morse to Text 1" FontSize="25"></Label>
                 <Label x:Name="MorseBufferOne" FontSize="20" Text="Buffer: "></Label>
                 <StackLayout Orientation="Horizontal">
                     <Button Clicked="dotOneClick" FontSize="30" x:Name="dotOne" Text="." BackgroundColor="LightGreen" HorizontalOptions="FillAndExpand"></Button>
@@ -19,16 +20,14 @@
                 <Button Clicked="spaceOneClick" Text="_" BackgroundColor="LightSalmon"></Button>
                 <Editor x:Name="resultOne" IsReadOnly="True"></Editor>
             </StackLayout>
-
-            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="Black"></BoxView>
             
             <StackLayout>
                 <Label x:Name="ErrorBox" TextColor="Red"></Label>
             </StackLayout>
 
-            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="Black"></BoxView>
 
             <StackLayout Orientation="Vertical">
+                <Label HorizontalOptions="CenterAndExpand" Text="Morse to Text 2" FontSize="25"></Label>
                 <Editor x:Name="resultTwo" IsReadOnly="True"></Editor>
                 <StackLayout Orientation="Horizontal">
                     <Button Clicked="dotTwoClick" FontSize="30" x:Name="dotTwo" Text="." BackgroundColor="LightGreen" HorizontalOptions="FillAndExpand"></Button>

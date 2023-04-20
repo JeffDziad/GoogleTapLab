@@ -14,6 +14,8 @@ namespace GoogleTapLab
         private string bufferOne = "";
         private string bufferTwo = "";
 
+        private string[] buffers = new string[2];
+
         public MainPage()
         {
             InitializeComponent();
