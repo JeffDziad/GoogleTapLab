@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 using Xamarin.Forms;
 
 namespace GoogleTapLab
@@ -46,7 +47,7 @@ namespace GoogleTapLab
             updateBufferLabel(MorseBufferTwo, bufferTwo);
         }
 
-        private void spaceOneClick(object sender, EventArgs e)
+        public void spaceOneClick(object sender, EventArgs e)
         {
             if(bufferOne.Length <= 0)
             {
@@ -71,7 +72,7 @@ namespace GoogleTapLab
             updateBufferLabel(MorseBufferOne, bufferOne);
         }
 
-        private void spaceTwoClick(object sender, EventArgs e)
+        public void spaceTwoClick(object sender, EventArgs e)
         {
             if (bufferTwo.Length <= 0)
             {
@@ -99,6 +100,17 @@ namespace GoogleTapLab
         private void updateBufferLabel(Label label, string buffer)
         {
             label.Text = buffer;
+        }
+
+        public void DeleteOneBtnClicked(object sender, EventArgs args)
+        {
+            if(resultOne.Text != null && resultOne.Text.Length > 0) resultOne.Text = resultOne.Text.Remove(resultOne.Text.Length - 1, 1);
+
+        }
+
+        public void DeleteTwoBtnClicked(object sender, EventArgs args)
+        {
+            if(resultTwo.Text != null && resultTwo.Text.Length > 0 & resultTwo.Text.Length > 0) resultTwo.Text = resultTwo.Text.Remove(resultTwo.Text.Length - 1, 1);
         }
 
     }
